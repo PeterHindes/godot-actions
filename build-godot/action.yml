@@ -14,9 +14,9 @@ inputs:
 runs:
   using: 'composite'
   steps:
-    - name: Open Godot editor for reimport
-      shell: bash
-      run: ${{ inputs.godot-executable }} --import --headless --verbose
+    # - name: Open Godot editor for reimport
+    #   shell: bash
+    #   run: ${{ inputs.godot-executable }} --import --headless --verbose
       
     - name: Build macOS application
       shell: bash
