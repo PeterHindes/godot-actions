@@ -36,7 +36,7 @@ runs:
     - uses: actions/upload-artifact@v4
       with:
         name: macos
-        path: ${{ inputs.build-dir }}/macos/macos.tar
+        path: ${{ inputs.build-dir }}/macos/macos.dmg
 
     - name: Build Windows application
       shell: bash
@@ -76,4 +76,4 @@ runs:
     - uses: actions/upload-artifact@v4
       with:
         name: linux
-        path: ${{ inputs.build-dir }}/linux/linux.tar
+        path: ${{ inputs.build-dir }}/linux/linux.zip
